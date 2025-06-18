@@ -1,0 +1,56 @@
+import React from 'react';
+import { Box, Container, Heading, Text, Image, Flex, Icon, Button, useColorModeValue } from '@chakra-ui/react';
+import { useParams } from 'react-router-dom';
+import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
+import { MdLocationOn, MdEventAvailable, MdGames } from 'react-icons/md';
+import { eventDetailMock } from '../mocks';
+
+const EventDetailPage = () => {
+  const { id } = useParams<{ id: string }>();
+  
+  const iconColor = useColorModeValue('gray.700', 'gray.300');
+  const boxBg = useColorModeValue('gray.100', 'gray.800');
+  const boxText = useColorModeValue('black', 'white');
+
+  return (
+    <Container maxW="1200px" py={8}>
+      <Heading as="h1" size="xl" mb={6}>{eventDetailMock.title}</Heading>
+      <Flex direction="column" gap={6}>
+        <Image src={eventDetailMock.imageUrl} alt={eventDetailMock.title} borderRadius="lg" w="full" h="400px" objectFit="cover" />
+        
+        <Flex direction="column" gap={4}>
+          <Flex align="center" gap={2}>
+            <Icon as={MdEventAvailable} color={iconColor} />
+            <Text fontSize="lg">
+              {format(new Date(eventDetailMock.date), 'dd/MM/yyyy HH:mm', { locale: ptBR })}
+            </Text>
+          </Flex>
+          
+          <Flex align="center" gap={2}>
+            <Icon as={MdLocationOn} color={iconColor} />
+            <Text fontSize="lg">{eventDetailMock.location}</Text>
+          </Flex>
+          
+          <Flex align="center" gap={2}>
+            <Icon as={MdGames} color={iconColor} />
+            <Text fontSize="lg">{eventDetailMock.game}</Text>
+          </Flex>
+        </Flex>
+
+        <Box bg={boxBg} p={6} borderRadius="lg">
+          <Heading as="h2" size="md" mb={4} color={boxText}>Sobre o Evento</Heading>
+          <Text fontSize="lg" lineHeight="1.8" color={boxText}>
+            {eventDetailMock.description}
+          </Text>
+        </Box>
+
+        <Button size="lg" variant="solid" alignSelf="center">
+          Inscrever-se no Evento
+        </Button>
+      </Flex>
+    </Container>
+  );
+};
+
+export default EventDetailPage; 
