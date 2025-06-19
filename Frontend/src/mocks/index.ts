@@ -7,7 +7,7 @@ export const sampleNews: News[] = [
     content: 'O mais recente patch de Valorant, 7.08, introduz ajustes significativos em agentes populares como Jett e Raze, além de otimizações no mapa Breeze e um novo sistema de ranking competitivo. Jogadores esperam que as mudanças equilibrem o meta e ofereçam novas estratégias. Prepare-se para uma experiência de jogo renovada e intensa com as novidades que prometem agitar o cenário competitivo!',
     publishedAt: '2024-03-10T10:00:00Z',
     author: 'Equipe GameEvents',
-    imageUrl: 'https://cdn.discordapp.com/attachments/1174163901633544275/1257404456956627968/News.png?ex=668383f9&is=66823279&hm=a403d15c7e1990c79ecf9119934988e040f90117b3f9b87e2f5b9d3b76541f53&',
+    imageUrl: 'https://s2-techtudo.glbimg.com/OHIlaFUs4xtmrrRvhttx8hY4Ta8=/0x0:1024x576/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/y/B/TFLQeIRbevvafUESalfg/pasted-image-0-8.jpg',
     category: 'Valorant',
   },
   {
@@ -16,7 +16,7 @@ export const sampleNews: News[] = [
     content: 'A Blizzard surpreende com a adição de dois novos heróis e um evento de temporada exclusivo em Overwatch 2. Os novos personagens prometem agitar a dinâmica das partidas, enquanto o evento especial oferece recompensas e desafios únicos. Fique por dentro das atualizações que estão transformando o universo de Overwatch!',
     publishedAt: '2024-03-09T14:30:00Z',
     author: 'GameNews Team',
-    imageUrl: 'https://cdn.discordapp.com/attachments/1174163901633544275/1257404457497750598/News_1.png?ex=668383f9&is=66823279&hm=557348912e75e9f80a4aa19ee40f91e9bf7238202206775f0a0499e714441400&',
+    imageUrl: 'https://static.wikia.nocookie.net/overwatch_gamepedia/images/6/6e/Overwatch_2_Logo.png',
     category: 'Overwatch',
   },
   {
@@ -25,7 +25,7 @@ export const sampleNews: News[] = [
     content: 'Fortnite anuncia uma colaboração surpreendente com uma franquia icônica, trazendo skins e itens exclusivos para o jogo. Além disso, um novo modo de jogo promete revolucionar a experiência Battle Royale, adicionando elementos inovadores e desafios emocionantes. Mergulhe nesta aventura e descubra todas as surpresas que o mundo de Fortnite preparou para você!',
     publishedAt: '2024-03-08T18:00:00Z',
     author: 'Epic Games News',
-    imageUrl: 'https://cdn.discordapp.com/attachments/1174163901633544275/1257404457229316106/News_2.png?ex=668383f9&is=66823279&hm=1e65ce459d81640a417641f391b1076b1f2679c16962f92476b7e6d45e1b1236&',
+    imageUrl: 'https://static.wikia.nocookie.net/fortnite_gamepedia/images/5/53/Fortnite_Logo.png',
     category: 'Fortnite',
   },
 ];
@@ -39,7 +39,7 @@ export const sampleEvents: GameEvent[] = [
     location: 'São Paulo, Brasil',
     game: 'Multi-plataforma',
     type: 'event',
-    imageUrl: 'https://cdn.discordapp.com/attachments/1174163901633544275/1257404554316886076/Event_1.png?ex=66838411&is=66823291&hm=4943f9a72134a65a3d0d6a2f3f721d743a1cf5532599723dd13c0b561c280540&',
+    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
     status: 'upcoming',
   },
   {
@@ -50,7 +50,7 @@ export const sampleEvents: GameEvent[] = [
     location: 'Rio de Janeiro, Brasil',
     game: 'Diversos',
     type: 'event',
-    imageUrl: 'https://cdn.discordapp.com/attachments/1174163901633544275/1257404554707089458/Event_2.png?ex=66838411&is=66823291&hm=42a38c201889c440a3d3c1264c1b97b0a3eb2786b46098059885827364cf1221&',
+    imageUrl: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80',
     status: 'upcoming',
   },
   {
@@ -61,7 +61,7 @@ export const sampleEvents: GameEvent[] = [
     location: 'Online',
     game: 'Cyberpunk 2077',
     type: 'event',
-    imageUrl: 'https://cdn.discordapp.com/attachments/1174163901633544275/1257404555076326441/Event_3.png?ex=66838411&is=66823291&hm=d04771746244f07e9c991e4b85c184c7e6c986c7526978508e67a6a4276709a3&',
+    imageUrl: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
     status: 'upcoming',
   },
 ];
@@ -111,7 +111,7 @@ export const eventDetailMock = {
   location: 'São Paulo, Brasil',
   game: 'Multi-plataforma',
   type: 'event',
-  imageUrl: 'https://cdn.discordapp.com/attachments/1174163901633544275/1257404554316886076/Event_1.png?ex=66838411&is=66823291&hm=4943f9a72134a65a3d0d6a2f3f721d743a1cf5532599723dd13c0b561c280540&',
+  imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
   status: 'upcoming',
 };
 
@@ -123,7 +123,7 @@ export const tournamentDetailMock = {
   location: 'Rio de Janeiro, Brasil',
   game: 'Counter-Strike 2',
   type: 'tournament',
-  imageUrl: 'https://cdn.discordapp.com/attachments/1174163901633544275/1257404554316886076/Event_1.png?ex=66838411&is=66823291&hm=4943f9a72134a65a3d0d6a2f3f721d743a1cf5532599723dd13c0b561c280540&',
+  imageUrl: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80',
   status: 'upcoming',
   prizePool: 'R$ 10.000',
   maxTeams: 16,
@@ -138,6 +138,6 @@ export const newsDetailMock = {
   date: '2024-03-15T10:00:00Z',
   author: 'João Silva',
   category: 'Notícias',
-  imageUrl: 'https://cdn.discordapp.com/attachments/1174163901633544275/1257404554316886076/Event_1.png?ex=66838411&is=66823291&hm=4943f9a72134a65a3d0d6a2f3f721d743a1cf5532599723dd13c0b561c280540&',
+  imageUrl: 'https://s2-techtudo.glbimg.com/OHIlaFUs4xtmrrRvhttx8hY4Ta8=/0x0:1024x576/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/y/B/TFLQeIRbevvafUESalfg/pasted-image-0-8.jpg',
   tags: ['Valorant', 'Atualização', 'Competitivo'],
 }; 
