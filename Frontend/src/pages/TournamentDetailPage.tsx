@@ -106,9 +106,11 @@ const TournamentDetailPage = () => {
           {tournament.description}
         </Text>
       </Box>
-      <Button size="lg" variant="solid" alignSelf="center" mt={6}>
-        Inscrever Equipe
-      </Button>
+      <Flex justify="center" mt={6}>
+        <Button size="lg" variant="solid">
+          Inscrever Equipe
+        </Button>
+      </Flex>
     </Container>
   );
 };

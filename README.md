@@ -126,6 +126,25 @@ O servidor será iniciado em [http://localhost:3001](http://localhost:3001)
 
 ---
 
+## 📡 Endpoints da API
+
+### Notícias (`/news`)
+- **GET `/news`** — Lista todas as notícias
+- **GET `/news/:id`** — Detalhe de uma notícia específica
+
+### Eventos (`/events`)
+- **GET `/events`** — Lista todos os eventos
+- **GET `/events/:id`** — Detalhe de um evento específico
+
+### Campeonatos (`/tournaments`)
+- **GET `/tournaments`** — Lista todos os campeonatos
+- **GET `/tournaments/:id`** — Detalhe de um campeonato específico
+
+### Health Check
+- **GET `/health`** — Verifica se o backend e o banco de dados estão funcionando
+
+---
+
 ## 🗄️ Banco de Dados
 
 - Scripts SQL para criar e popular tabelas de notícias, eventos e campeonatos.
