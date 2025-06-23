@@ -1,6 +1,7 @@
 CREATE TABLE tournaments (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
+    description TEXT,
     game TEXT NOT NULL,
     start_date TIMESTAMP NOT NULL,
     end_date TIMESTAMP NOT NULL,

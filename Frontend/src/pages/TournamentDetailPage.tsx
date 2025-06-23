@@ -64,7 +64,7 @@ const TournamentDetailPage = () => {
   return (
     <Container maxW="1200px" py={8}>
       <Heading as="h1" size="xl" mb={6}>{tournament.name}</Heading>
-      <Image src={tournament.imageUrl} alt={tournament.name} borderRadius="lg" w="full" h="400px" objectFit="cover" />
+      <Image src={tournament.imageUrl} alt={tournament.name} borderRadius="lg" w="full" h="400px" objectFit="cover" mb={6} />
       <Grid templateColumns="repeat(2, 1fr)" gap={6}>
         <Flex direction="column" gap={4}>
           <Flex align="center" gap={2}>
@@ -72,10 +72,6 @@ const TournamentDetailPage = () => {
             <Text fontSize="lg">
               {format(new Date(tournament.startDate), 'dd/MM/yyyy', { locale: ptBR })} - {format(new Date(tournament.endDate), 'dd/MM/yyyy', { locale: ptBR })}
             </Text>
-          </Flex>
-          <Flex align="center" gap={2}>
-            <Icon as={MdLocationOn} color={iconColor} />
-            <Text fontSize="lg">{tournament.location}</Text>
           </Flex>
           <Flex align="center" gap={2}>
             <Icon as={MdGames} color={iconColor} />

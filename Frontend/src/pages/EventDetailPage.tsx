@@ -63,10 +63,6 @@ const EventDetailPage = () => {
             </Text>
           </Flex>
           <Flex align="center" gap={2}>
-            <Icon as={MdLocationOn} color={iconColor} />
-            <Text fontSize="lg">{event.location}</Text>
-          </Flex>
-          <Flex align="center" gap={2}>
             <Icon as={MdGames} color={iconColor} />
             <Text fontSize="lg">{event.game}</Text>
           </Flex>
