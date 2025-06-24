@@ -12,6 +12,10 @@ import NewsPage from './pages/NewsPage';
 import EventDetailPage from './pages/EventDetailPage';
 import TournamentDetailPage from './pages/TournamentDetailPage';
 import NewsDetailPage from './pages/NewsDetailPage';
+import AboutPage from './pages/AboutPage';
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/TermsPage';
+import ContactPage from './pages/ContactPage';
 
 const queryClient = new QueryClient();
 
@@ -32,6 +36,10 @@ function App() {
                 <Route path="/tournaments/:id" element={<TournamentDetailPage />} />
                 <Route path="/news" element={<NewsPage />} />
                 <Route path="/news/:id" element={<NewsDetailPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/privacy" element={<PrivacyPage />} />
+                <Route path="/terms" element={<TermsPage />} />
+                <Route path="/contact" element={<ContactPage />} />
               </Routes>
             </Box>
             <Footer />

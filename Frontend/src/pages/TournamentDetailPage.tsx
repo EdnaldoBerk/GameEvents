@@ -102,11 +102,11 @@ const TournamentDetailPage = () => {
           {tournament.description}
         </Text>
       </Box>
-      <Flex justify="center" mt={6}>
+      {/* <Flex justify="center" mt={6}>
         <Button size="lg" variant="solid">
           Inscrever Equipe
         </Button>
-      </Flex>
+      </Flex> */}
     </Container>
   );
 };

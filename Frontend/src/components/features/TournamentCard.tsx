@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Flex, Icon, Link } from '@chakra-ui/react';
+import { Text, Flex, Icon, Button } from '@chakra-ui/react';
 import { BaseCard } from '../ui/BaseCard';
 import { Tournament } from '../../types';
 import { format } from 'date-fns';
@@ -44,9 +44,16 @@ export const TournamentCard = ({ tournament }: TournamentCardProps) => {
         </Text>
       ]}
       action={
-        <Link as={RouterLink} to={`/tournaments/${tournament.id}`} fontSize="sm" fontWeight="bold">
+        <Button
+          as={RouterLink}
+          to={`/tournaments/${tournament.id}`}
+          colorScheme="blue"
+          variant="solid"
+          size="sm"
+          fontWeight="bold"
+        >
           Detalhes do Campeonato
-        </Link>
+        </Button>
       }
     />
   );

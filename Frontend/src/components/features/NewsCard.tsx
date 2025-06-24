@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Link } from '@chakra-ui/react';
+import { Text, Button } from '@chakra-ui/react';
 import { BaseCard } from '../ui/BaseCard';
 import { News } from '../../types';
 import { format } from 'date-fns';
@@ -23,9 +23,16 @@ export const NewsCard = ({ news }: NewsCardProps) => {
       ]}
       description={news.content}
       action={
-        <Link as={RouterLink} to={`/news/${news.id}`} fontSize="sm" fontWeight="bold">
+        <Button
+          as={RouterLink}
+          to={`/news/${news.id}`}
+          colorScheme="blue"
+          variant="solid"
+          size="sm"
+          fontWeight="bold"
+        >
           Ler Mais
-        </Link>
+        </Button>
       }
     />
   );

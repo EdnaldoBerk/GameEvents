@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Flex, Icon, Link } from '@chakra-ui/react';
+import { Text, Flex, Icon, Button } from '@chakra-ui/react';
 import { BaseCard } from '../ui/BaseCard';
 import { GameEvent } from '../../types';
 import { format } from 'date-fns';
@@ -33,9 +33,16 @@ export const EventCard = ({ event }: EventCardProps) => {
       ]}
       description={event.description}
       action={
-        <Link as={RouterLink} to={`/events/${event.id}`} fontSize="sm" fontWeight="bold">
+        <Button
+          as={RouterLink}
+          to={`/events/${event.id}`}
+          colorScheme="blue"
+          variant="solid"
+          size="sm"
+          fontWeight="bold"
+        >
           Ver Detalhes
-        </Link>
+        </Button>
       }
     />
   );

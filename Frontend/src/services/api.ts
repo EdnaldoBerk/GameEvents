@@ -8,7 +8,6 @@ const api = axios.create({
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    // Aqui podemos adicionar lógica para tratamento de erros
     console.error('API Error:', error);
     return Promise.reject(error);
   }
